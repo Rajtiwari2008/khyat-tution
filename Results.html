@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Results &amp; Achievements | Khyat Institute</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error-container": "#93000a",
+                    "on-surface": "#181c20",
+                    "inverse-surface": "#2d3135",
+                    "primary-fixed": "#dbe1ff",
+                    "error": "#ba1a1a",
+                    "surface-container": "#ebeef3",
+                    "surface-tint": "#405aa8",
+                    "surface-dim": "#d7dadf",
+                    "on-error": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-container": "#6e5700",
+                    "background": "#f7f9ff",
+                    "primary-container": "#0b2d7a",
+                    "on-primary-fixed-variant": "#26428e",
+                    "on-primary-container": "#7f98eb",
+                    "on-tertiary-fixed": "#380d00",
+                    "surface-container-highest": "#e0e3e8",
+                    "on-primary-fixed": "#00174d",
+                    "error-container": "#ffdad6",
+                    "primary-fixed-dim": "#b5c4ff",
+                    "inverse-on-surface": "#eef1f6",
+                    "secondary-fixed-dim": "#f0c110",
+                    "surface": "#f7f9ff",
+                    "secondary-fixed": "#ffe08b",
+                    "tertiary-fixed": "#ffdbcf",
+                    "on-tertiary-fixed-variant": "#7a3010",
+                    "secondary-container": "#fdcc22",
+                    "surface-container-high": "#e5e8ee",
+                    "tertiary-fixed-dim": "#ffb59a",
+                    "on-background": "#181c20",
+                    "on-tertiary-container": "#e5815b",
+                    "outline-variant": "#c5c6d3",
+                    "outline": "#757682",
+                    "primary": "#001953",
+                    "inverse-primary": "#b5c4ff",
+                    "surface-variant": "#e0e3e8",
+                    "surface-container-low": "#f1f4f9",
+                    "tertiary-container": "#601d00",
+                    "on-primary": "#ffffff",
+                    "tertiary": "#3d0f00",
+                    "on-surface-variant": "#444651",
+                    "on-secondary-fixed-variant": "#584400",
+                    "surface-bright": "#f7f9ff",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#745b00",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed": "#241a00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "base": "8px",
+                    "container-max-width": "1280px",
+                    "section-gap-desktop": "120px",
+                    "section-gap-mobile": "64px"
+            },
+            "fontFamily": {
+                    "body-md": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-md": ["Montserrat"],
+                    "headline-sm": ["Montserrat"],
+                    "display-lg": ["Montserrat"],
+                    "display-lg-mobile": ["Montserrat"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .float-anim { animation: float 6s ease-in-out infinite; }
+        .masonry {
+            column-count: 1;
+            column-gap: 24px;
+        }
+        @media (min-width: 768px) { .masonry { column-count: 2; } }
+        @media (min-width: 1024px) { .masonry { column-count: 3; } }
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 glass-nav bg-white/80 border-b border-outline-variant/30 shadow-sm">
+    <nav class="max-w-container-max-width mx-auto px-gutter py-4 flex justify-between items-center">
+        <a class="font-headline-sm text-headline-sm font-bold text-primary flex items-center gap-2" href="index.html">
+            <span class="material-symbols-outlined text-[32px] text-primary">school</span>
+            Khyat Institute
+        </a>
+        
+        <div class="hidden md:flex gap-8 items-center">
+            <a class="text-on-surface font-label-md text-label-md hover:text-secondary transition-colors" href="index.html">Home</a>
+            <a class="text-on-surface font-label-md text-label-md hover:text-secondary transition-colors" href="Courses.html">Courses</a>
+            <a class="text-on-surface font-label-md text-label-md hover:text-secondary transition-colors" href="Results.html">Results</a>
+            <a class="text-on-surface font-label-md text-label-md hover:text-secondary transition-colors" href="faculty.html">Faculty</a>
+            <a class="text-on-surface font-label-md text-label-md hover:text-secondary transition-colors" href="about.html">About</a>
+            <a class="text-on-surface font-label-md text-label-md hover:text-secondary transition-colors" href="Contact.html">Contact</a>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <a href="Contact.html" class="bg-secondary-container text-on-secondary-container px-6 py-2.5 rounded-full font-label-md text-label-md font-bold hover:brightness-95 transition-all active:scale-95 shadow-sm block text-center">
+                Admission Open
+            </a>
+            <button class="md:hidden text-primary" id="mobileMenuBtn" aria-label="Toggle Mobile Menu">
+                <span class="material-symbols-outlined text-[32px]">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile menu panel -->
+    <div class="hidden md:hidden bg-white/95 border-t border-outline-variant/20 px-gutter py-6 flex flex-col gap-4 transition-all duration-300" id="mobileMenuPanel">
+        <a class="text-on-surface font-label-md text-label-md hover:text-secondary transition-colors py-2" href="index.html">Home</a>
+        <a class="text-on-surface font-label-md text-label-md hover:text-secondary transition-colors py-2" href="Courses.html">Courses</a>
+        <a class="text-on-surface font-label-md text-label-md hover:text-secondary transition-colors py-2" href="Results.html">Results</a>
+        <a class="text-on-surface font-label-md text-label-md hover:text-secondary transition-colors py-2" href="faculty.html">Faculty</a>
+        <a class="text-on-surface font-label-md text-label-md hover:text-secondary transition-colors py-2" href="about.html">About</a>
+        <a class="text-on-surface font-label-md text-label-md hover:text-secondary transition-colors py-2" href="Contact.html">Contact</a>
+    </div>
+</header>
+<!-- Hero Section -->
+<header class="relative pt-32 pb-20 overflow-hidden">
+<div class="max-w-container-max-width mx-auto px-gutter text-center relative z-10">
+<span class="inline-block px-4 py-1.5 bg-primary-fixed text-on-primary-fixed rounded-full font-label-md mb-6 uppercase tracking-widest">2024 Board Results</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6 max-w-3xl mx-auto">
+                Celebrating Our <span class="text-secondary">Brightest Stars</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10">
+                A legacy of academic excellence and consistent results. Witness the outstanding achievements of our students across CBSE and GSEB boards.
+            </p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<a class="bg-primary text-on-primary px-8 py-4 rounded-xl font-label-md hover:shadow-lg transition-all" href="#results">View Rankers</a>
+<a class="border-2 border-primary text-primary px-8 py-4 rounded-xl font-label-md hover:bg-primary-fixed transition-all" href="#testimonials">Read Stories</a>
+</div>
+</div>
+<!-- Decorative Floating Elements -->
+<div class="absolute -top-20 -right-20 w-80 h-80 bg-secondary-fixed/20 rounded-full blur-3xl float-anim"></div>
+<div class="absolute bottom-10 -left-10 w-64 h-64 bg-primary-fixed-dim/30 rounded-full blur-3xl float-anim" style="animation-delay: -2s"></div>
+</header>
+<!-- Stats Bar -->
+<section class="bg-surface-container py-12 relative z-20">
+<div class="max-w-container-max-width mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="text-center p-8 bg-white rounded-2xl shadow-sm border border-outline-variant/30 transition-transform hover:-translate-y-1">
+<span class="material-symbols-outlined text-4xl text-secondary mb-4" data-icon="military_tech">military_tech</span>
+<div class="font-display-lg text-display-lg-mobile text-primary mb-2" id="stat-toppers">50+</div>
+<div class="font-label-md text-on-surface-variant">Top Rankers (95%+)</div>
+</div>
+<div class="text-center p-8 bg-white rounded-2xl shadow-sm border border-outline-variant/30 transition-transform hover:-translate-y-1">
+<span class="material-symbols-outlined text-4xl text-secondary mb-4" data-icon="star">star</span>
+<div class="font-display-lg text-display-lg-mobile text-primary mb-2" id="stat-dist">250+</div>
+<div class="font-label-md text-on-surface-variant">Distinctions</div>
+</div>
+<div class="text-center p-8 bg-white rounded-2xl shadow-sm border border-outline-variant/30 transition-transform hover:-translate-y-1">
+<span class="material-symbols-outlined text-4xl text-secondary mb-4" data-icon="trending_up">trending_up</span>
+<div class="font-display-lg text-display-lg-mobile text-primary mb-2" id="stat-pass">100%</div>
+<div class="font-label-md text-on-surface-variant">Overall Pass Rate</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Result Grid -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-white" id="results">
+<div class="max-w-container-max-width mx-auto px-gutter">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Board Toppers 2024</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">The elite league of students who mastered the curriculum and soared high.</p>
+</div>
+<div class="flex gap-2 p-1 bg-surface-container rounded-lg">
+<button class="px-6 py-2 rounded-md bg-white text-primary font-label-md shadow-sm">CBSE</button>
+<button class="px-6 py-2 rounded-md text-on-surface-variant font-label-md hover:bg-white/50 transition-colors">GSEB</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Result Card 1 -->
+<div class="group relative bg-surface border border-outline-variant rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300">
+<div class="relative h-64 overflow-hidden">
+<img alt="Student Portrait" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A professional studio portrait of a bright-eyed young male student wearing a crisp white school uniform with a tie. He is smiling confidently against a soft, neutral professional background with warm, institutional lighting. The image style is polished and high-end, reflecting a premium educational brand with natural skin tones and a clean, sharp focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqf84vqJaQjDsneNjpQ-n47SzP7_foC33m52EvB_xleiEtsFKSTS78-ZmLf2Bda9xxqtcBmrvc5F1zCeX8iwwqt14HGXxRgIKmsI06GPiQ7LJ2g3yrc4VUlk0yocEV3OVWHjpizz0aYLckLWt4zblfkfNj94KWB6Zh8mM_4hyNDeFxPvLsi0MPtIb0qCgKa54XVGcgum9-ujjJcVTz4ABVXhd4SQcgA0jVdVHhOsM2nGHr3ZfCDFTjk7UEb-fzh0IB75GeSpmwsA"/>
+<div class="absolute top-4 left-4 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+                            1st RANK
+                        </div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm text-primary">Aaryan Mehta</h3>
+<span class="text-secondary font-bold text-xl">99.2%</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant font-label-md mb-4">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">school</span> CBSE Class XII</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">science</span> Science</span>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between text-sm">
+<span>Mathematics</span>
+<span class="font-bold">100/100</span>
+</div>
+<div class="w-full bg-outline-variant/30 h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full" style="width: 100%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Result Card 2 -->
+<div class="group relative bg-surface border border-outline-variant rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300">
+<div class="relative h-64 overflow-hidden">
+<img alt="Student Portrait" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A portrait of a cheerful young female student with glasses, holding a book, looking towards the camera with an expression of achievement. She is in a modern school setting with soft-focus books in the background. The lighting is bright and airy, using a professional corporate modern aesthetic with high-key whites and subtle royal blue accents in her clothing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAA34Cc1-EnYYVQrS6yEcVSssO6-pQYVLM91eyyExBqWITXqXldIpwJzRGDzlCKfI0DWjZ4jMd0gK5sva_hqAuL9IMpcoT7U07t9HE3mfPbYHu47llw8ZDoHqcLaQCsI0Gc0JkWSHE2a8_D32QPmTvkyBQp4sY5YVzCANUrxV1Bi2g9NZOolk9lJe3fuAYNR9GDz1_jOtRVeVKSH0naagkFtAOVtjsj5qrQc99JpDpf5NwiGUPKS9RxksmVKQUiUei4mvdeAhd1WA"/>
+<div class="absolute top-4 left-4 bg-surface-container-highest text-on-surface px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+                            2nd RANK
+                        </div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm text-primary">Riya Sharma</h3>
+<span class="text-secondary font-bold text-xl">98.8%</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant font-label-md mb-4">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">school</span> CBSE Class XII</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">payments</span> Commerce</span>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between text-sm">
+<span>Accountancy</span>
+<span class="font-bold">99/100</span>
+</div>
+<div class="w-full bg-outline-variant/30 h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full" style="width: 99%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Result Card 3 -->
+<div class="group relative bg-surface border border-outline-variant rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300">
+<div class="relative h-64 overflow-hidden">
+<img alt="Student Portrait" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A dignified portrait of a young male student in a dark blue school blazer. He stands against a modern architectural background featuring glass and concrete elements. The lighting is cinematic with soft rim highlights, conveying authority and excellence. The color palette is dominated by deep blues and clean whites, consistent with a corporate modern education institute." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBv8tfcf1cPHF_e9TkDKXsU-okm45ZEi2EFIDJnUAQjodtFf_z40LZKsZu2WnMQWf7-Nbbwpirp0iStbXDyOh8FCeFkRFArVmU8TBnippcx0jaufakYhmigw6xuEHVoEqLCYNNyq3QrV_zuzL6KimQA_TmQKAjrxtDuvesfBHyGaeslmE3uUitDsRfEo6GxFFeX_ODx8J05XhV65nPP1ClR2fYmNWUYvjyTFq4bOfnMrPjvkm3YSquISYTwmXOPQ88d-UnO3z4aqw"/>
+<div class="absolute top-4 left-4 bg-surface-container-highest text-on-surface px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+                            3rd RANK
+                        </div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm text-primary">Ishaan Patel</h3>
+<span class="text-secondary font-bold text-xl">97.5%</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant font-label-md mb-4">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">school</span> CBSE Class X</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">auto_stories</span> General</span>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between text-sm">
+<span>Science</span>
+<span class="font-bold">98/100</span>
+</div>
+<div class="w-full bg-outline-variant/30 h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full" style="width: 98%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center">
+<button class="bg-surface-container-high text-primary px-8 py-3 rounded-full font-label-md hover:bg-primary-fixed-dim transition-colors">
+                    View Full Merit List 2024
+                </button>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-primary relative overflow-hidden" id="testimonials">
+<div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10"></div>
+<div class="max-w-container-max-width mx-auto px-gutter relative z-10">
+<h2 class="font-headline-md text-headline-md text-white text-center mb-16">Stories of Success</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Testimonial 1 -->
+<div class="glass-card p-8 rounded-3xl border border-white/20 text-on-primary-container">
+<span class="material-symbols-outlined text-5xl text-secondary mb-6 block" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<p class="font-body-lg text-body-lg mb-8 italic">
+                        "The personalized attention and the rigorous test series at Khyat Institute were game-changers for me. They didn't just teach subjects; they taught me how to approach complex problems with confidence."
+                    </p>
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full overflow-hidden border-2 border-secondary">
+<img alt="Student" class="w-full h-full object-cover" data-alt="A close-up headshot of a smiling young woman with dark hair. She looks directly at the camera with a warm, genuine expression. The background is softly blurred with hints of greenery and outdoor light. The overall mood is positive and successful, aligning with a high-end educational success story." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhqaZLtgpV9S-kP2lvGmlwPIGFs8LLoDX5vrvmPp4JrzqbU725jXMyzfw2n0yYOaWfHg1yfmw9Uio0wbYsRCYJW-HCol1Yx8najE-r8dr2rTuqi88uiI3Sr9yKSbnihjYZfv7jOlAZNFP3tnr4b9nwhGmsYQMhwPkukMBaqdDiIuudGof2Elkopm78nZPWknZOgPvwI_rApnmrAf0bHjgTjda1CrPjzQB3L9YD-PYBcao7xMqeqoWP1Jau2My6NvDHjrIV9F3wdg"/>
+</div>
+<div>
+<div class="font-headline-sm text-sm text-primary font-bold">Sneha Kapoor</div>
+<div class="text-xs font-label-md text-on-surface-variant uppercase">IIT-JEE Aspirant | 98.2% CBSE</div>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="glass-card p-8 rounded-3xl border border-white/20 text-on-primary-container">
+<span class="material-symbols-outlined text-5xl text-secondary mb-6 block" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<p class="font-body-lg text-body-lg mb-8 italic">
+                        "As a parent, I was worried about the transition to Class XI. Khyat's faculty acted as mentors, ensuring our son stayed motivated. His results are a testament to their dedication and structured pedagogy."
+                    </p>
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full overflow-hidden border-2 border-secondary">
+<img alt="Parent" class="w-full h-full object-cover" data-alt="A professional headshot of a middle-aged man wearing a smart casual blazer. He has a friendly and supportive expression, representing a satisfied parent. The background is a clean, modern office or educational lobby with soft bokeh. The lighting is natural and bright, reinforcing a sense of trust and institutional reliability." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnW7r4MMOnj4uSvmpFBj900OQS8q-xi1fDPvniWFFVpgmDI2HVylftQ3oN0ToBrIuUXYqwvsqVAKORoJ67h--nRv4hPleKm3DVN1Qy5ulg9G7OOCdtpZKleTpUqcBctyJobsz6aixwCLuma_FuEUvJtsK0GOMW86q2HazNMqaROow_lLFwCnIjyS9QIDiICAlgyv2-liTSHrT8MaMg3wmZ3nwSdnKTX_LpE_8_KYh95auSaT-zMSUT550mkcX4ScLQjNrli1fwTg"/>
+</div>
+<div>
+<div class="font-headline-sm text-sm text-primary font-bold">Mr. Rajesh Varma</div>
+<div class="text-xs font-label-md text-on-surface-variant uppercase">Proud Parent of Arjun Varma</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Section -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-background">
+<div class="max-w-container-max-width mx-auto px-gutter">
+<h2 class="font-headline-md text-headline-md text-primary mb-12 text-center">Life at Khyat</h2>
+<div class="masonry">
+<div class="masonry-item">
+<img alt="Classroom" class="w-full rounded-2xl shadow-md hover:shadow-xl transition-shadow" data-alt="A wide shot of a modern, well-lit classroom with students engaged in a group discussion. The room features high ceilings, glass walls, and contemporary educational technology. The color palette includes royal blue accents on the chairs and neutral wood tones. The mood is one of focused, collaborative learning in a premium academic setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzbPtMbinuT231Kzzjads7IsfGWCu54wJAfkFWV2CpJU5W4K0RlooVE6bHzIsUNSUhklxPjpSIVJBnZFXe6y16ytXb5a5opibJrRIAGtRZv6dJAdTAW2J3A0tapqAhA6QsHszY8aozs3bv5De-KOm_iOnqjthETwTEeGY_02_esS6v7BP2uBOr3sxi9yyAdjQFLqUx7eLZIVx0pos_0rSS404OpHe6orOF0uGRl400YszcV1HKdnz9l-1BR0BXQcnXOqDSFDNPOg"/>
+</div>
+<div class="masonry-item">
+<img alt="Award Ceremony" class="w-full rounded-2xl shadow-md hover:shadow-xl transition-shadow" data-alt="A grand award ceremony taking place in a sleek auditorium. A student in a graduation gown is receiving a trophy from a distinguished faculty member. The lighting is dramatic and festive with spotlights on the stage. The institutional brand logo is visible in the background, maintaining a sense of prestige and achievement." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSkwWVgXyxXEdtJjt5hPFYqod4LU96x5NVqiuZmyDQNdxYa3FFLHoAYox2j4TSEaWMOb0iya-LAbNhO55kJfIvwcLCXYlngyMtjY_5jUvakXsZst8fX8dwvF7Msyq0oj_I0en02NU6hRpxDPIBicnJISgsijxuHj6CXgjqXK-tMYhvA1shIRJIT0qlCp24MXXqG-v0RxzwtdFR3-rgNtZaA-V4Zs_nc4et0qnZNo_geuTgCpNpM5qmWxUEwxD3RoeCA7YZx9-kUA"/>
+</div>
+<div class="masonry-item">
+<img alt="Campus Life" class="w-full rounded-2xl shadow-md hover:shadow-xl transition-shadow" data-alt="A group of smiling students sitting in a modern, landscaped campus courtyard. They are holding books and coffee cups, enjoying a casual break between classes. The architecture in the background is minimalist and glass-heavy. The lighting is warm golden hour sunlight, creating an inviting and elite campus atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_gobbtw5_M0EWWMTX8TQPPLTGX4AKJGDNZFjcord8MQPZC9tZ_hP2lt72vPHyYpUUMEPdjXSg_6qO0uVRNE8gQc_SP0-khan8Acv5uPW9zLlUqSpxUuEmZSKAXBXRLSWwkJWHOPRUuWLUCP2sV6OTJETVwEnv-BLG4YFkueRw7hsEjrkU-q2qW-Acs7eL4q71LgWPkJv9tUz5M_PwGoXLa0fOjFBnOyF1cfvhtlS6EDjpUdu4MmZJ2gg0UFR-oIHUpxdsju5lgA"/>
+</div>
+<div class="masonry-item">
+<img alt="Laboratory" class="w-full rounded-2xl shadow-md hover:shadow-xl transition-shadow" data-alt="A close-up of high-end lab equipment in a physics laboratory. Students are performing a precise experiment using lasers and mirrors. The setting is clean, modern, and clinical with blue-toned lighting emphasizing technological advancement and scientific rigor. This represents the high-quality facilities at the institute." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7TwoWrS6A1Lv4y9OZzi5TxFV13QU3tufwOHYH45-ZXL1WtpQHysiXd2ms7WXC3kgF1n4_wCCY0NUxXShptLI7z0Tnle3Ryzrw06x5REmMSP4tOB2o6RmWipG-ptou5d2k2BGmm7uCrMErTwP2QS4kylZ9wrVsoHzgQHnaQ36DQ3QeJZ_zpF6sU44ybCEUU85W_8PvMcV1FTSc-ds_Y6AuEHnOjnRGFxJOSrfP0l2s_KtISSVa6i0Px9WeLWX4lLKXXK1LjJZh7g"/>
+</div>
+<div class="masonry-item">
+<img alt="Library" class="w-full rounded-2xl shadow-md hover:shadow-xl transition-shadow" data-alt="An expansive, modern library with floor-to-ceiling bookshelves and quiet study carrels. Students are intensely studying under soft, warm task lighting. The aesthetic is sophisticated and silent, with a palette of deep browns and clean whites, highlighting the institute's commitment to academic focus and resource-rich environments." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsclYPByuCxN0sLfticuCsN2sxDaJI5KA-dF5eacAQ0MRNE_qQE3pf-6S-bZrgn_HuuWw7h7HYlv72uTiF4F5-8E_NvxyQTAkBq8xVFwfSrHE7-0uUWMc9oi90bGLbqB19U8oBGQMR1uyJ-A8maQGe2IB9s7BEdBUFp32v0U09ZrLoX6T_u8W_gxbr8sYOtYVe2ly7Z2ALxTWXOmyOzBKITWhW5a2Q31SDJAd_vAuhffIYpDEKM82KkzzJktoa_Bm-qQ9qEoUZCg"/>
+</div>
+<div class="masonry-item">
+<img alt="Digital Learning" class="w-full rounded-2xl shadow-md hover:shadow-xl transition-shadow" data-alt="A dynamic workshop session where a teacher is using a large interactive digital screen to demonstrate a complex concept. Students are following along on their personal tablets. The lighting is bright and technical, with a focus on digital-first learning and modern pedagogy in a clean, high-contrast classroom environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1kVaRUaWGcLeNGXO5FCFVXnoFy8GrwaOKEl5WeKb2l1n278zpVbSMq_pEHBLt8XrdzKsSLQMROitupdseZ-mzPj6NRJLAOS11hbyoB19luyUPXWFYLRgmeN-m7nqoJL1lI0yMjxl-mxRMAiZ8sqyuxTcCujiolRwc-TirLBU2lEp0Z4cb2sBkhZ7JcD8YpM5l7C7YF9IxkSrVlfwFLKHuH1ESVd6fDmO2CaqG76O-ZsJPRiYewsX3hHGRe6CIC86E7yyaEM3sLw"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Inquiry Form Section -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-surface-container-low">
+<div class="max-w-container-max-width mx-auto px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-display-lg text-display-lg-mobile md:text-headline-md text-primary mb-6">Join the League of Toppers</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                        Ready to start your journey towards excellence? Fill out the form and our counselors will get in touch with a personalized learning roadmap for you.
+                    </p>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-sm">check</span>
+</div>
+<span class="font-label-md">Expert Faculty Guidance</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-sm">check</span>
+</div>
+<span class="font-label-md">Comprehensive Study Material</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-sm">check</span>
+</div>
+<span class="font-label-md">Regular Performance Tracking</span>
+</div>
+</div>
+</div>
+<div class="bg-white p-8 md:p-12 rounded-3xl shadow-xl">
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label-md text-xs text-on-surface-variant mb-2 uppercase">Student Name</label>
+<input class="w-full bg-surface-container-low border-transparent focus:border-primary focus:ring-0 rounded-xl py-3 px-4" placeholder="Full Name" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-xs text-on-surface-variant mb-2 uppercase">Parent Name</label>
+<input class="w-full bg-surface-container-low border-transparent focus:border-primary focus:ring-0 rounded-xl py-3 px-4" placeholder="Full Name" type="text"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-xs text-on-surface-variant mb-2 uppercase">Phone Number</label>
+<input class="w-full bg-surface-container-low border-transparent focus:border-primary focus:ring-0 rounded-xl py-3 px-4" placeholder="+91 00000 00000" type="tel"/>
+</div>
+<div>
+<label class="block font-label-md text-xs text-on-surface-variant mb-2 uppercase">Interested Board / Course</label>
+<select class="w-full bg-surface-container-low border-transparent focus:border-primary focus:ring-0 rounded-xl py-3 px-4">
+<option>CBSE Class XI-XII (Science)</option>
+<option>CBSE Class XI-XII (Commerce)</option>
+<option>GSEB Class XI-XII (Science)</option>
+<option>Secondary (Class IX-X)</option>
+</select>
+</div>
+<button class="w-full bg-secondary text-on-secondary font-label-md py-4 rounded-xl hover:bg-secondary-fixed-dim transition-colors shadow-lg">Submit Application</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-on-surface border-t border-outline-variant w-full mt-section-gap-desktop">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-base px-gutter py-section-gap-mobile max-w-container-max-width mx-auto">
+<div class="md:col-span-1">
+<div class="font-headline-md text-headline-md text-primary dark:text-primary-fixed mb-6">Khyat Institute</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Pioneering education since 2005. Building future leaders through academic excellence and value-based learning.
+                </p>
+</div>
+<div>
+<h4 class="font-label-md text-primary mb-6 uppercase">Quick Links</h4>
+<ul class="space-y-3 font-body-md text-on-surface-variant">
+<li><a class="hover:text-secondary transition-colors" href="#">Courses Offered</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Academic Calendar</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Results Gallery</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Faculty Directory</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-primary mb-6 uppercase">Contact Us</h4>
+<ul class="space-y-3 font-body-md text-on-surface-variant">
+<li class="flex gap-2"><span class="material-symbols-outlined text-sm">location_on</span> 102, Excellence Plaza, Ahmedabad, GJ</li>
+<li class="flex gap-2"><span class="material-symbols-outlined text-sm">call</span> +91 79 2658 0000</li>
+<li class="flex gap-2"><span class="material-symbols-outlined text-sm">mail</span> admission@khyat.edu.in</li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-primary mb-6 uppercase">Newsletter</h4>
+<p class="font-body-md text-on-surface-variant mb-4">Stay updated with institute news.</p>
+<div class="flex">
+<input class="w-full bg-white rounded-l-lg border-outline-variant focus:ring-primary" placeholder="Email" type="email"/>
+<button class="bg-primary text-on-primary px-4 rounded-r-lg">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="border-t border-outline-variant/30 py-6 px-gutter max-w-container-max-width mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-label-md text-on-surface-variant">© 2024 Khyat Institute. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-on-surface-variant hover:text-primary font-label-md" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary font-label-md" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-primary font-label-md" href="#">Cookie Policy</a>
+<a class="text-on-surface-variant hover:text-primary font-label-md" href="#">Sitemap</a>
+</div>
+</div>
+</footer>
+<script>
+       // Mobile navigation panel toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenuPanel = document.getElementById('mobileMenuPanel');
+
+    if (mobileMenuBtn && mobileMenuPanel) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenuPanel.classList.toggle('hidden');
+        });
+    }
+        // Simple counter animation
+        function animateCounter(id, target, suffix = '') {
+            let current = 0;
+            const element = document.getElementById(id);
+            const increment = target / 50;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.innerText = target + suffix;
+                    clearInterval(timer);
+                } else {
+                    element.innerText = Math.floor(current) + suffix;
+                }
+            }, 30);
+        }
+
+        // Intersection Observer for counters
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounter('stat-toppers', 50, '+');
+                    animateCounter('stat-dist', 250, '+');
+                    animateCounter('stat-pass', 100, '%');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        observer.observe(document.getElementById('stat-toppers'));
+    </script>
+</body></html>
